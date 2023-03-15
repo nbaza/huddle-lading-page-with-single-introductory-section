@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
-main{
+body{
     background-color: #684BB1;
     background-image: url(images/bg-mobile.svg); 
     background-repeat: no-repeat;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    background-size:cover;
+}
+
+main{
+    width:100%; 
 }
 header img{
     margin-top:38.2px;
@@ -80,8 +89,11 @@ footer img:hover{
 }
 @media only screen and (min-width:1440px) {
     main{
+        height: 100%; 
+    }
+    body{ 
+        height:100vh;
         background-image: url(images/bg-desktop.svg); 
-        background-size: 91.5277778%;
     }
     header img{
         margin-top:64px;
